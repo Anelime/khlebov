@@ -402,6 +402,18 @@ html.js .reveal.in{opacity:1;transform:none}
   .hero-badge{right:0;top:auto;bottom:10%}
 }
 
+/* дополнительное образование — CV-список в две колонки */
+.cpd-wrap{margin-top:56px;border-top:1px solid var(--line-strong);padding-top:40px}
+.cpd-title{font-size:clamp(20px,2.4vw,26px);font-weight:700;letter-spacing:-.01em;color:var(--ink)}
+.cpd-sub{color:var(--muted);font-size:14.5px;margin-top:10px;max-width:64ch}
+.cpd{column-count:2;column-gap:56px;margin-top:24px}
+.cpd-item{break-inside:avoid;display:grid;grid-template-columns:58px 1fr;gap:16px;align-items:baseline;
+  padding:15px 2px;border-top:1px solid var(--line)}
+.cpd-item .yr{font-size:14px;font-weight:800;color:var(--blue);font-variant-numeric:tabular-nums}
+.cpd-item .ct{font-size:15px;font-weight:600;color:var(--ink);line-height:1.42}
+.cpd-item .cp{display:block;color:var(--muted);font-size:13px;font-weight:400;margin-top:3px}
+@media (max-width:820px){.cpd{column-count:1}}
+
 :focus-visible{outline:2px solid var(--blue);outline-offset:3px;border-radius:6px}
 </style>
 </head>
@@ -589,6 +601,24 @@ html.js .reveal.in{opacity:1;transform:none}
         <div class="reg"><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M4 7h16M4 12h16M4 17h10"/></svg><div><b>Постоянное обучение</b><span>Курсы и стажировки по микронейрохирургии, эндоскопии и сосудистой нейрохирургии.</span></div></div>
       </div>
     </div>
+      <div class="cpd-wrap reveal">
+        <div class="cpd-title">Дополнительное образование и стажировки</div>
+        <p class="cpd-sub">Регулярное повышение квалификации по микронейрохирургии, эндоскопии, сосудистой и спинальной хирургии в ведущих центрах России и за рубежом, а также участие в международных конференциях и симпозиумах.</p>
+        <div class="cpd">
+          <div class="cpd-item"><span class="yr">2013</span><span class="ct">Хирургия и интенсивная терапия черепно-мозговой травмы<span class="cp">НИИ СП им. Н. В. Склифосовского, Москва</span></span></div>
+          <div class="cpd-item"><span class="yr">2014</span><span class="ct">Образовательный курс WFNS (Всемирная федерация нейрохирургов)<span class="cp">Санкт-Петербург</span></span></div>
+          <div class="cpd-item"><span class="yr">2015</span><span class="ct">Мастер-класс по микрососудистому анастомозу<span class="cp">Федеральный центр нейрохирургии, Тюмень</span></span></div>
+          <div class="cpd-item"><span class="yr">2015</span><span class="ct">Стажировка: эндоскопическая, микро- и спинальная нейрохирургия<span class="cp">Федеральный центр нейрохирургии, Тюмень</span></span></div>
+          <div class="cpd-item"><span class="yr">2015</span><span class="ct">Стажировка по сосудистой нейрохирургии<span class="cp">РМАПО Минздрава РФ, Москва</span></span></div>
+          <div class="cpd-item"><span class="yr">2016</span><span class="ct">Сложные аневризмы, тромбоэкстракция при инсульте, интервенционное лечение боли<span class="cp">Алматы, Казахстан</span></span></div>
+          <div class="cpd-item"><span class="yr">2017</span><span class="ct">Хирургическая реваскуляризация головного мозга<span class="cp">МГМСУ им. А. И. Евдокимова, Москва</span></span></div>
+          <div class="cpd-item"><span class="yr">2017</span><span class="ct">Сагиттальный баланс и анализ позвоночника<span class="cp">Санкт-Петербург</span></span></div>
+          <div class="cpd-item"><span class="yr">2018</span><span class="ct">Кадавер-курс по транспедикулярной фиксации Stryker<span class="cp">Кёльн, Германия</span></span></div>
+          <div class="cpd-item"><span class="yr">2020</span><span class="ct">Современные аспекты высокотехнологичной нейрохирургической помощи<span class="cp">Санкт-Петербург</span></span></div>
+          <div class="cpd-item"><span class="yr">2021</span><span class="ct">Актуальные вопросы сосудистой хирургии<span class="cp">Санкт-Петербург</span></span></div>
+          <div class="cpd-item"><span class="yr">2021</span><span class="ct">Современные аспекты безопасности гемотрансфузий<span class="cp">Санкт-Петербург</span></span></div>
+        </div>
+      </div>
   </div>
 </section>
 
